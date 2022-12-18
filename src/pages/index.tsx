@@ -15,7 +15,6 @@ const Home: NextPage = () => {
     e.preventDefault();
     if (url.trim() !== "") {
       downloadMutation.mutateAsync({ url: url.trim() });
-      console.log(downloadMutation.data?.xxx);
     }
   };
 
