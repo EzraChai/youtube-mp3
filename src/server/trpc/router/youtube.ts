@@ -7,6 +7,6 @@ export const youtubeRouter = router({
   download: publicProcedure
     .input(z.object({ url: z.string().trim().url() }))
     .mutation(async ({ input }) => {
-      return downloadSong(input.url, { outputDir: `/public` });
+      return downloadSong(input.url);
     }),
 });
