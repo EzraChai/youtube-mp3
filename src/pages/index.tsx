@@ -51,7 +51,7 @@ const Home: NextPage = () => {
                 />
                 {downloadMutation.error && (
                   <div className="mt-2 text-sm text-red-500">
-                    {"The URL is not valid."}
+                    {downloadMutation.error.message}
                   </div>
                 )}
               </div>
